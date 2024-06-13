@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="cdfi.fintantra.meity.Paymentlist">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/colorPrimary"
+
+            android:id="@+id/tr"
+            android:layout_margin="0sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ffffff"
+                android:textSize="5sp"
+                android:elevation="5sp"
+                android:textStyle="bold"
+                android:text="@string/version"
+                android:layout_marginRight="10sp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/font_sizev"
+                android:id="@+id/name"
+                android:textColor="#ffffff"
+                android:text="Welcome Sunil Kumar Thanga"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/font_sizev"
+                android:visibility="gone"
+                android:id="@+id/fponame"
+                android:textColor="#ffffff"
+                android:layout_below="@id/name"
+                android:text="Thanga Thamarai IC"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+
+                android:layout_width="50sp"
+                android:visibility="visible"
+                android:layout_height="50sp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/kanchinewlogo"
+                android:layout_margin="10sp"
+                android:elevation="10sp"
+
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/ticd"
+                android:textSize="25sp"
+                android:layout_marginTop="15sp"
+                android:textColor="#ffffff"
+                android:text="ICD"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/font_sizev"
+                android:id="@+id/fponame2"
+                android:textColor="#ffffff"
+                android:layout_below="@id/ticd"
+                android:text="Payment"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_weight="1"
+            android:layout_below="@id/tr"
+            android:visibility="gone"
+            android:id="@+id/l"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_below="@+id/ru"
+                android:background="@drawable/relativebg"
+                android:layout_margin="5sp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Payment"
+                    android:id="@+id/txtheader"
+                    android:layout_marginTop="5sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:id="@+id/linear"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:id="@+id/rdetail"
+
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:id="@+id/im1"
+
+                            android:background="@drawable/details"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5sp"
+                            android:id="@+id/v1"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5sp"
+
+
+                            android:background="#1EE500"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:id="@+id/rsummary">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:id="@+id/im2"
+
+                            android:background="@drawable/summary"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5sp"
+                            android:id="@+id/v2"
+                            android:visibility="gone"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5sp"
+                            android:background="#1EE500"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:id="@+id/rpayment">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:id="@+id/im3"
+
+                            android:background="@drawable/payment2"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5sp"
+                            android:id="@+id/v3"
+                            android:visibility="gone"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5sp"
+                            android:background="#1EE500"/>
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="Details"
+                android:textAllCaps="false"
+                android:textSize="@dimen/font_sizeb"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:background="#F4B53F"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10sp"
+                android:id="@+id/detail"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="Summary"
+                android:textAllCaps="false"
+                android:textSize="@dimen/font_sizeb"
+                android:visibility="gone"
+                android:padding="5sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:background="#F1948A"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10sp"
+                android:id="@+id/header"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:text="Payment"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textSize="@dimen/font_sizeb"
+                android:layout_weight="1"
+
+                android:padding="5sp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:background="#F1948A"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10sp"
+                android:id="@+id/payment"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tr"
+            android:id="@+id/l3">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tr">
+                <EditText android:id="@+id/inputSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10sp"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:hint="Search Customer.."
+                    android:background="@drawable/red"
+                    android:inputType="textVisiblePassword"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ptm"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/inputSearch"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l44"
+            android:layout_below="@+id/l"
+            android:visibility="gone"
+
+
+
+
+
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l2"
+                android:visibility="gone"
+
+
+
+
+
+
+
+                android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:visibility="gone"
+                            >
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#000000"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginHorizontal="12sp"
+                                android:alpha="0.6"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60sp"
+                                    android:visibility="gone"
+                                    android:layout_weight="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Inward No"
+                                            android:layout_centerVertical="true"
+                                            android:textSize="@dimen/font_sizel"
+                                            android:layout_weight="1.5" android:visibility="gone"
+                                            android:layout_gravity="center"
+                                            android:textStyle="bold"
+                                            android:textColor="#000000" android:textColorHint="#000000"
+                                            android:id="@+id/txt1"
+                                            android:layout_margin="12sp"/>
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40sp"
+                                            android:textSize="@dimen/font_sizee"
+                                            android:padding="5sp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_centerVertical="true"
+                                            android:id="@+id/einwno"
+                                            android:enabled="false"
+                                            android:layout_marginHorizontal="12sp"
+                                            android:layout_marginLeft="10sp"
+                                            android:textColor="#000000" android:textColorHint="#000000"
+                                            android:layout_toRightOf="@id/txt1"
+                                            android:background="@drawable/red2"/>
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+
+                            android:layout_margin="10sp"
+                            android:background="@drawable/relativebg"
+                            android:gravity="center"
+                            android:layout_below="@id/splash">
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:id="@+id/eddate"
+                                    android:focusable="false"
+                                    android:paddingLeft="10sp"
+                                    android:hint="Date"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <AutoCompleteTextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:inputType="phone"
+                                        android:maxLength="10"
+                                        android:id="@+id/esupplier"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Mobile No"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lsup"
+
+
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <AutoCompleteTextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:id="@+id/esuppliern"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Customer Name"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_margin="10sp"
+                            android:background="@drawable/relativebg"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Type"
+                                        android:textSize="@dimen/font_sizel"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.5" android:visibility="gone"
+                                        android:textStyle="bold"
+                                        android:enabled="false"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="#000000" android:textColorHint="#000000"
+                                        android:id="@+id/txtm"
+                                        android:layout_marginLeft="12sp"/>
+                                    <Spinner
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40sp"
+                                        android:textSize="@dimen/font_sizee"
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/spinnerm"
+                                        android:enabled="false"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_margin="12sp"
+                                        android:layout_marginLeft="10sp"
+                                        android:textColor="#000000" android:textColorHint="#000000"
+                                        android:layout_toRightOf="@id/txtm"
+                                        />
+                                </LinearLayout></RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="@drawable/relativebg"
+                            android:layout_margin="10sp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60sp"
+
+
+                                    android:gravity="center"
+                                    >
+                                    <com.google.android.material.textfield.TextInputLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <AutoCompleteTextView
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@null"
+                                            android:id="@+id/elocation"
+                                            android:paddingLeft="10sp"
+                                            android:hint="Location"/>
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </RelativeLayout>
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40sp"
+                                    android:textSize="@dimen/font_sizee"
+                                    android:visibility="gone"
+                                    android:id="@+id/spinnerl"
+                                    android:enabled="false"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_margin="12sp"
+                                    android:layout_marginLeft="10sp"
+                                    android:textColor="#000000" android:textColorHint="#000000"
+
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <EditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:id="@+id/newnet"
+                                        android:focusable="false"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Net Amount"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Tax"
+                                            android:textSize="@dimen/font_sizel"
+                                            android:textStyle="bold"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1.5" android:visibility="gone"
+                                            android:layout_centerVertical="true"
+                                            android:textColor="#000000" android:textColorHint="#000000"
+                                            android:id="@+id/txt5"
+                                            android:layout_marginLeft="12sp"/>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60sp"
+                                                android:layout_weight="1"
+
+                                                android:layout_margin="10sp"
+                                                android:background="@drawable/relativebg"
+                                                android:gravity="center"
+                                                android:layout_below="@id/splash">
+                                                <com.google.android.material.textfield.TextInputLayout
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_height="wrap_content"
+                                                    >
+
+                                                    <EditText
+
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:background="@null"
+                                                        android:id="@+id/etax"
+                                                        android:focusable="false"
+                                                        android:paddingLeft="10sp"
+                                                        android:hint="Tax"/>
+                                                </com.google.android.material.textfield.TextInputLayout>
+                                            </RelativeLayout>
+                                            <Button
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30sp"
+                                                android:text="View"
+                                                android:layout_marginTop="10sp"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/font_sizev"
+                                                android:layout_weight="3"
+                                                android:padding="5sp"
+
+
+                                                android:paddingStart="10sp"
+                                                android:paddingLeft="10sp"
+                                                android:layout_gravity="center"
+                                                android:textColor="#ffffff"
+                                                android:background="@drawable/rbutton"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_margin="10sp"
+                                                android:id="@+id/view3"/>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <EditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:inputType="numberDecimal"
+                                        android:id="@+id/etransport"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Transport"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+
+                            android:layout_margin="10sp"
+                            android:background="@drawable/relativebg"
+                            android:gravity="center"
+                            android:layout_below="@id/splash">
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:id="@+id/eothers"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="10sp"
+                                    android:hint="Others"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Gross Amount"
+                                        android:textSize="@dimen/font_sizel"
+                                        android:layout_weight="1.5" android:visibility="gone"
+                                        android:layout_gravity="center"
+
+                                        android:layout_centerVertical="true"
+                                        android:textStyle="bold"
+                                        android:textColor="#000000" android:textColorHint="#000000"
+                                        android:id="@+id/txt8"
+                                        android:layout_marginLeft="12sp"/>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60sp"
+                                            android:layout_weight="1"
+
+                                            android:layout_margin="10sp"
+                                            android:background="@drawable/relativebg"
+                                            android:gravity="center"
+                                            android:layout_below="@id/splash">
+                                            <com.google.android.material.textfield.TextInputLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:layout_height="wrap_content"
+                                                >
+
+                                                <EditText
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@null"
+                                                    android:focusable="false"
+                                                    android:id="@+id/einwamt"
+                                                    android:paddingLeft="10sp"
+                                                    android:hint="Gross Amount"/>
+                                            </com.google.android.material.textfield.TextInputLayout>
+                                        </RelativeLayout>
+                                        <Button
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30sp"
+                                            android:layout_marginTop="10sp"
+                                            android:text="View"
+                                            android:padding="5sp"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="3"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toRightOf="@+id/einwamt"
+
+                                            android:textAllCaps="false"
+                                            android:textSize="@dimen/font_sizev"
+
+                                            android:paddingStart="10sp"
+                                            android:paddingLeft="10sp"
+                                            android:textColor="#ffffff"
+                                            android:background="@drawable/rbutton"
+
+                                            android:layout_margin="10sp"
+                                            android:id="@+id/view2"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>        </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l1"
+                android:visibility="gone"
+
+
+
+
+
+                android:orientation="vertical"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120sp"
+                            android:visibility="gone"
+                            android:layout_margin="10sp"
+                            android:orientation="vertical"
+                            android:background="#515A5A">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60sp"
+                                    >
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60sp"
+                                        android:layout_weight="1">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Item Count"
+                                                android:textSize="@dimen/font_sizel"
+                                                android:textStyle="bold"
+                                                android:layout_weight="1.5"
+                                                android:layout_gravity="center"
+                                                android:layout_centerVertical="true"
+                                                android:textColor="#ffffff"
+                                                android:id="@+id/txt9"
+                                                android:layout_marginLeft="12sp"/>
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="40sp"
+                                                android:textSize="@dimen/font_sizee"
+                                                android:id="@+id/ecount"
+
+
+                                                android:textColorHint="#ffffff"
+                                                android:layout_gravity="center"
+                                                android:enabled="false"
+                                                android:textAlignment="viewStart"
+                                                android:padding="5sp"
+                                                android:layout_weight="1"
+                                                android:layout_toRightOf="@+id/txt9"
+                                                android:layout_margin="12sp"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="10sp"
+                                                android:textColor="#ffffff"
+                                                android:background="@null"
+                                                tools:ignore="RtlCompat,UnknownId" />
+                                        </LinearLayout></RelativeLayout>
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1sp"
+                                    android:background="#000000"
+                                    android:visibility="gone"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginHorizontal="12sp"
+                                    android:alpha="0.6"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+
+                                >
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1sp"
+                                    android:background="#000000"
+                                    android:visibility="gone"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginHorizontal="12sp"
+                                    android:alpha="0.6"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Total"
+                                        android:layout_weight="1.5"
+                                        android:layout_gravity="center"
+                                        android:textSize="@dimen/font_sizel"
+                                        android:layout_centerVertical="true"
+                                        android:textStyle="bold"
+                                        android:textColor="#ffffff"
+                                        android:id="@+id/txt10"
+                                        android:layout_marginLeft="12sp"/>
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40sp"
+                                        android:textSize="@dimen/font_sizee"
+                                        android:id="@+id/etotal"
+                                        android:layout_weight="1"
+                                        android:textColorHint="#ffffff"
+
+                                        android:textAlignment="viewStart"
+
+                                        android:padding="5sp"
+                                        android:layout_gravity="center"
+                                        android:layout_toRightOf="@+id/txt10"
+                                        android:layout_centerVertical="true"
+                                        android:enabled="false"
+                                        android:layout_margin="12sp"
+                                        android:layout_marginLeft="10sp"
+                                        android:textColor="#ffffff"
+                                        android:background="@null"
+                                        tools:ignore="RtlCompat" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <AutoCompleteTextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:id="@+id/eitem"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Item"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+
+                            android:layout_margin="10sp"
+                            android:background="@drawable/relativebg"
+                            android:gravity="center"
+                            android:layout_below="@id/splash">
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:id="@+id/esl"
+                                    android:paddingLeft="10sp"
+                                    android:hint="Serial Bags"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:layout_margin="10sp"
+
+                            android:background="@drawable/relativebg"
+                            android:gravity="start">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Quantity"
+                                android:textSize="18sp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10sp"
+                                android:id="@+id/ttqty"/>
+                            <ImageView
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
+                                android:id="@+id/qa"
+                                android:layout_toRightOf="@id/ttqty"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5sp"
+                                android:background="@drawable/qa"
+                                />
+                            <ImageView
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
+                                android:id="@+id/qd"
+                                android:layout_toRightOf="@id/equantity"
+                                android:layout_marginRight="5sp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/qd"
+                                />
+
+                            <EditText
+                                android:layout_width="60sp"
+                                android:layout_height="40sp"
+                                android:textSize="@dimen/font_sizee"
+                                android:textAlignment="center"
+                                android:padding="5sp"                                            android:layout_margin="5sp"
+                                android:id="@+id/equantity"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/qa"
+                                android:inputType="numberDecimal"
+                                android:layout_marginLeft="10sp"
+                                android:textColor="#000000" android:textColorHint="#000000"
+                                android:background="@null"
+                                android:gravity="center_horizontal|center_vertical" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+
+                            android:layout_margin="10sp"
+                            android:background="@drawable/relativebg"
+                            android:gravity="center"
+                            android:layout_below="@id/splash">
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:id="@+id/erate"
+                                    android:paddingLeft="10sp"
+                                    android:hint="Rate"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <EditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:id="@+id/eamount"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Amount"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+
+                            android:layout_margin="10sp"
+                            android:background="@drawable/relativebg"
+                            android:gravity="center"
+                            android:layout_below="@id/splash">
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:id="@+id/ediscount"
+                                    android:paddingLeft="10sp"
+                                    android:hint="Discount"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:layout_weight="1"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <EditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:id="@+id/enetamount"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Net Amount"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="30sp"
+                                android:text="View"
+                                android:layout_marginTop="10sp"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/font_sizev"
+                                android:layout_weight="3"
+                                android:padding="5sp"
+
+
+                                android:paddingStart="10sp"
+                                android:paddingLeft="10sp"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                android:background="@drawable/rbutton"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="10sp"
+                                android:id="@+id/view"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+
+                            android:layout_weight="1">
+
+                            >
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/l4">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="140sp"
+                        android:layout_height="40sp"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+
+
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+
+                        android:background="@drawable/rbutton3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="10sp"
+                        android:id="@+id/lsave"
+                        />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true"
+                        android:layout_above="@id/lsave"
+                        android:layout_margin="10sp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:visibility="visible"
+                                android:id="@+id/r2">
+                                <ImageView
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_margin="10sp"
+                                    android:id="@+id/back"
+                                    android:background="@drawable/back"
+                                    />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1sp"
+                                    android:layout_alignParentBottom="true"
+                                    android:alpha="0.6"
+                                    android:background="#ffffff"/>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/r2"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:orientation="vertical">
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/relativebg"
+                                        android:alpha="0.5"/>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="Invoice No:"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"/>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="Invoice No"
+                                                    android:textAlignment="viewEnd"
+                                                    android:id="@+id/invoiceno"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"
+                                                    tools:ignore="RtlCompat" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="Amount:"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"/>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="amount"
+                                                    android:id="@+id/amount"
+                                                    android:textAlignment="viewEnd"
+
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"
+                                                    tools:ignore="RtlCompat" />
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="Paid:"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"/>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="paid"
+                                                    android:textAlignment="viewEnd"
+                                                    android:id="@+id/paid"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:digits="0123456789."
+                                                    android:inputType="number"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"
+                                                    tools:ignore="RtlCompat" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="Balance"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"/>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:text="balance"
+                                                    android:textAlignment="viewEnd"
+                                                    android:id="@+id/balance"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="10sp"
+                                                    android:textSize="@dimen/font_sizev"
+                                                    tools:ignore="RtlCompat" />
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60sp"
+                                        android:layout_margin="10sp"
+                                        android:background="@drawable/relativebg"
+                                        >
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60sp"
+                                            >
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Paymode"
+                                                    android:textSize="@dimen/font_sizel"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1.5" android:visibility="gone"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_centerVertical="true"
+                                                    android:id="@+id/txt19"
+                                                    android:layout_marginLeft="12sp"/>
+                                                <Spinner
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="40sp"
+                                                    android:textSize="@dimen/font_sizee"
+                                                    android:id="@+id/spinner"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_margin="12sp"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:layout_toRightOf="@id/txt19"
+                                                    />
+                                            </LinearLayout></RelativeLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/lch"
+                                        android:visibility="gone"
+                                        >
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60sp"
+
+                                            android:layout_margin="10sp"
+                                            android:background="@drawable/relativebg"
+                                            android:gravity="center"
+                                            android:layout_below="@id/splash">
+                                            <com.google.android.material.textfield.TextInputLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:layout_height="wrap_content"
+                                                >
+
+                                                <EditText
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@null"
+                                                    android:inputType="number"
+                                                    android:id="@+id/chno"
+                                                    android:paddingLeft="10sp"
+                                                    android:hint="Cheque No"/>
+                                            </com.google.android.material.textfield.TextInputLayout>
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60sp"
+
+                                            android:layout_margin="10sp"
+                                            android:background="@drawable/relativebg"
+                                            android:gravity="center"
+                                            android:layout_below="@id/splash">
+                                            <com.google.android.material.textfield.TextInputLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:layout_height="wrap_content"
+                                                >
+
+                                                <EditText
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@null"
+                                                    android:inputType="numberDecimal"
+                                                    android:id="@+id/eamountpaid"
+                                                    android:paddingLeft="10sp"
+                                                    android:hint="Amount Paid"/>
+                                            </com.google.android.material.textfield.TextInputLayout>
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60sp"
+
+                                            android:layout_margin="10sp"
+                                            android:background="@drawable/relativebg"
+                                            android:gravity="center"
+                                            android:layout_below="@id/splash">
+                                            <com.google.android.material.textfield.TextInputLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:layout_height="wrap_content"
+                                                >
+
+                                                <EditText
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@null"
+                                                    android:id="@+id/erefno"
+                                                    android:paddingLeft="10sp"
+                                                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                                                    android:hint="Reference No"/>
+                                            </com.google.android.material.textfield.TextInputLayout>
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        >
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60sp"
+
+                                            android:layout_margin="10sp"
+                                            android:background="@drawable/relativebg"
+                                            android:gravity="center"
+                                            android:layout_below="@id/splash">
+                                            <com.google.android.material.textfield.TextInputLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_centerVertical="true"
+                                                android:layout_height="wrap_content"
+                                                >
+
+                                                <EditText
+
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@null"
+                                                    android:id="@+id/epdate"
+                                                    android:focusable="false"
+                                                    android:paddingLeft="10sp"
+                                                    android:hint="Date"/>
+                                            </com.google.android.material.textfield.TextInputLayout>
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Balance"
+                                                    android:textSize="@dimen/font_sizel"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1.5" android:visibility="gone"
+                                                    android:layout_centerVertical="true"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#000000" android:textColorHint="#000000"
+                                                    android:id="@+id/txt25"
+                                                    android:layout_marginLeft="12sp"/>
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="80sp"
+                                                    android:layout_weight="1">
+                                                    <RelativeLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="60sp"
+                                                        android:layout_weight="1"
+
+                                                        android:layout_margin="10sp"
+                                                        android:background="@drawable/relativebg"
+                                                        android:gravity="center"
+                                                        android:layout_below="@id/splash">
+                                                        <com.google.android.material.textfield.TextInputLayout
+
+                                                            android:layout_width="match_parent"
+                                                            android:layout_centerVertical="true"
+                                                            android:layout_height="wrap_content"
+                                                            >
+
+                                                            <AutoCompleteTextView
+
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:background="@null"
+                                                                android:id="@+id/ebalance"
+                                                                android:focusable="false"
+                                                                android:paddingLeft="10sp"
+                                                                android:hint="Balance"/>
+                                                        </com.google.android.material.textfield.TextInputLayout>
+                                                    </RelativeLayout>
+                                                    <Button
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="30sp"
+                                                        android:text="View"
+
+                                                        android:paddingStart="10sp"
+                                                        android:paddingLeft="10sp"
+                                                        android:padding="5sp"
+                                                        android:textAllCaps="false"
+                                                        android:textSize="@dimen/font_sizev"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="3"
+
+
+
+                                                        android:textColor="#ffffff"
+                                                        android:background="@drawable/rbutton"
+
+                                                        android:layout_margin="10sp"
+                                                        android:id="@+id/viewp"/>
+
+                                                </LinearLayout>
+                                            </LinearLayout></RelativeLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </ScrollView>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

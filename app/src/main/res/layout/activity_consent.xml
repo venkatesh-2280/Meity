@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pscroll"
+    android:background="#f2f2f2"
+    android:fillViewport="true"
+    tools:context=".Consent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ru"
+            android:background="@drawable/rbutton2"
+            android:text="Close Attachment"
+            android:elevation="10sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:id="@+id/vclose"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vimage"
+            android:visibility="gone"
+
+            android:elevation="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/vclose"
+            />
+    <RelativeLayout
+        android:id="@+id/ru"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+
+        android:background="@color/colorPrimary2">
+
+        <ImageView
+
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/llg"
+            android:elevation="10sp"
+
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ru"
+            android:layout_marginHorizontal="15sp"
+            android:orientation="vertical"
+
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Consent"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="Farmer Name:"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="Farmer Name:"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="FPO Name:"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fponame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="FPO Name:"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="Mobile No:"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fmno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="Mobile No:"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#000000" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+
+                android:layout_margin="5sp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/language"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:background="#ffffff"
+                        android:layout_marginRight="10sp"
+                        android:drawableRight="@drawable/dr_down"
+                        android:focusable="false"
+                        android:hint="Language"
+                        android:paddingTop="10sp"
+
+                        android:paddingLeft="10sp"
+                        android:text="English" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg">
+
+
+                <TextView
+
+                    android:id="@+id/uaspoly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10sp"
+                    android:background="@null"
+                    android:hint="Consent Type"
+
+                    android:inputType="number"
+                    android:paddingLeft="5sp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/uaspoly"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5sp"
+                        android:checked="false"
+                        android:text="OTP"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5sp"
+                        android:checked="false"
+                        android:text="Attachment"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </RelativeLayout>
+            <android.widget.Button
+                android:id="@+id/viewattac"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:visibility="gone"
+
+                android:background="@drawable/rbutton3"
+
+                android:paddingLeft="10sp"
+                android:text="View Attachment"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/verify"
+                android:layout_width="50sp"
+                android:layout_height="20sp"
+                android:background="@drawable/verify"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg">
+
+                <ScrollView
+                    android:id="@+id/cscroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fillViewport="true">
+
+                    <TextView
+                        android:id="@+id/ctext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:maxLines="15"
+                        android:elevation="10sp"
+
+
+                        android:padding="5sp"
+                        android:paddingLeft="10sp"
+                        android:textSize="10sp" />
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlis"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+
+                android:background="@drawable/relativebg"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/ischeckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:text="Is Verified"
+                    android:textColor="#000000" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:text="I have read the consent and am agreeable to the same"
+                    android:textColor="#000000" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg">
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:text="I have read the consent and am dis-agreeable to the same"
+                    android:textColor="#000000" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/tdate"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:id="@+id/agree"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbutton4"
+
+                    android:paddingLeft="10sp"
+                    android:text="Agree"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <android.widget.Button
+                    android:id="@+id/disagree"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rbutton2"
+
+                    android:paddingLeft="10sp"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

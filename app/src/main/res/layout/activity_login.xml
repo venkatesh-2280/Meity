@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pawhs.LoginActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    <ImageView
+
+        android:layout_width="50sp"
+        android:visibility="visible"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/kanchinewlogo"
+        android:layout_margin="5sp"
+
+
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:textSize="5sp"
+        android:elevation="5sp"
+        android:textStyle="bold"
+        android:text="@string/version"
+        android:layout_marginRight="10sp"
+        android:layout_alignParentRight="true" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp">
+        <ImageView
+            android:id="@+id/splash"
+            android:layout_width="150sp"
+            android:visibility="visible"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/newkanchilogos"
+            android:transitionName="imageshare" />
+
+        <EditText
+            android:id="@+id/ipaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:hint="IP Address"
+            android:textColorHint="@color/black"
+            android:background="@null"
+            android:inputType="text"
+            android:autofillHints="@string/username_phno"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="2dp"/>
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="10sp"
+            android:hint="@string/username_phno"
+            android:textColorHint="@color/black"
+            android:background="@null"
+            android:inputType="text"
+            android:autofillHints="@string/username_phno"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="2dp"/>
+
+        <EditText
+            android:id="@+id/edt_userpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:autofillHints="@string/password"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="2dp"/>
+        <Button
+            android:id="@+id/login_buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="25dp"/>
+
+        <ImageView
+            android:id="@+id/ministry"
+            android:layout_width="250sp"
+            android:layout_height="80sp"
+            android:layout_below="@+id/ul"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/ministry_logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pass"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_below="@+id/linear"
+        android:id="@+id/uls"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uls"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/copyright"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/cdfi" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/flexico" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent"
+        android:visibility="gone">
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            wheel:matProg_barColor="@color/colorAccent"
+            wheel:matProg_progressIndeterminate="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

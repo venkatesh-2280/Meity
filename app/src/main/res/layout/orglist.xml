@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@color/colorPrimary2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="FPO"
+            android:id="@+id/dtitle"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:id="@+id/close"
+            android:background="@drawable/cls"
+            android:layout_centerVertical="true"
+            android:layout_margin="10sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/dialogProgressBar"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10sp"
+        android:spinnerMode="dialog"
+
+
+        android:id="@+id/spinner"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10sp"
+        android:spinnerMode="dialog"
+        android:visibility="gone"
+
+        android:id="@+id/spinner2"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10sp"
+        android:spinnerMode="dialog"
+        android:visibility="gone"
+
+        android:id="@+id/spinner3"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10sp"
+        android:spinnerMode="dialog"
+        android:visibility="gone"
+
+        android:id="@+id/spinner4"/>
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+
+        android:text="Proceed"
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+
+        android:layout_margin="10sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:id="@+id/button"/>
+
+</LinearLayout>

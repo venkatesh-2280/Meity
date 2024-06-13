@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="4">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/cls"
+                android:id="@+id/cls"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10sp"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:background="@drawable/user"
+                android:id="@+id/iuser"
+                android:layout_centerVertical="true"
+                android:layout_margin="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:textColor="#ffffff"
+                android:id="@+id/tuser"
+                android:layout_toRightOf="@id/iuser"
+                android:textSize="@dimen/font_sizee"
+                android:layout_marginTop="40sp"
+                android:text="Welcome User!"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:id="@+id/fname"
+
+                android:layout_toRightOf="@id/iuser"
+                android:textSize="@dimen/font_sizee"
+                android:layout_below="@id/tuser"
+                android:text="Thanga Thamarai Input Center"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.6"
+                android:layout_margin="10sp"
+                android:visibility="gone"
+                android:background="#ffffff"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/gray"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_margin="10sp"
+            android:layout_toRightOf="@id/iuser"
+            android:layout_centerVertical="true"
+             android:textSize="@dimen/font_sizeo"
+            android:text="Sync"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rmast"
+                android:layout_weight="4">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/mst"
+                    android:id="@+id/img4"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img4"
+                    android:text="Master"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.6"
+                    android:layout_margin="10sp"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rtrs"
+                android:visibility="gone"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/trs"
+                    android:id="@+id/img5"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img5"
+                    android:text="Transactions"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.6"
+                    android:layout_margin="10sp"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:background="@color/gray"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="10sp"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/iuser"
+            android:layout_centerVertical="true"
+             android:textSize="@dimen/font_sizeo"
+            android:text="Transactions"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/r1"
+                android:elevation="5sp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/sinw"
+                    android:id="@+id/img"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img"
+                    android:text="Inward Stock"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/r7"
+                android:elevation="5sp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/issu"
+                    android:id="@+id/img7i"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:id="@+id/tissue"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img7i"
+                    android:text="Issue / Transfer to ICD"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/r2"
+                android:elevation="5sp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/inv"
+                    android:id="@+id/img2"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img2"
+                    android:text="Book Invoice"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/r3"
+                android:elevation="5sp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/sad"
+                    android:id="@+id/img3"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img3"
+                    android:text="Adjust Stock"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/r6"
+
+                android:elevation="5sp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/pay"
+                    android:id="@+id/img6"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img6"
+                    android:text="Collection Invoice"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/r6p"
+                android:visibility="gone"
+
+                android:elevation="5sp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/pay"
+                    android:id="@+id/img6p"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img6p"
+                    android:text="Payment(Inward)"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.6"
+                    android:layout_marginHorizontal="10sp"
+
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/setting"
+                    android:id="@+id/img7"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img7"
+                    android:text="Settings"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rlo"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/logout"
+                    android:id="@+id/img8"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                     android:textSize="@dimen/font_sizeo"
+                    android:layout_toRightOf="@id/img8"
+                    android:text="Logout"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+</RelativeLayout>

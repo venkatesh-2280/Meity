@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:background="@drawable/newrlbg"
+
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llist"
+        android:layout_margin="10sp"
+        android:elevation="5sp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_weight="2.3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center|start"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:text="Farmer First Name:"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fn"
+                android:text="Name:"
+                android:layout_toRightOf="@id/t1"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tf"
+                android:text="FHW Name:"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+                android:layout_below="@id/t1"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tf2"
+                android:text=""
+                android:layout_below="@id/t1"
+
+                android:layout_toRightOf="@id/tf"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t2"
+                android:text="Village:"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+                android:layout_below="@id/tf"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vi"
+                android:text="Mobile:"
+                android:layout_below="@id/tf"
+
+                android:layout_toRightOf="@id/t2"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t3"
+                android:text="Grama Panchayat:"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+                android:layout_below="@id/t2"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gp"
+                android:text="Location:"
+                android:layout_below="@id/t2"
+
+                android:layout_toRightOf="@id/t3"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t3"
+                android:layout_margin="5sp"
+                android:text="Taluk:"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t3"
+                android:layout_marginStart="5sp"
+
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+
+                android:layout_marginEnd="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_toRightOf="@id/t4"
+                android:text="type:"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t4"
+                android:layout_marginStart="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:text="District :"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fdistrict"
+                android:text="type:"
+                android:layout_below="@id/t4"
+                android:layout_toRightOf="@id/t6"
+                android:layout_margin="5sp"
+                android:textSize="13sp"
+
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t6"
+                android:layout_marginStart="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:text="Mobile Number:"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/di"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t6"
+                android:layout_marginStart="5sp"
+
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+
+                android:layout_marginEnd="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_toRightOf="@id/t5"
+                android:text="type:"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

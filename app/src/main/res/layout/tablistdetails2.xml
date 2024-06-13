@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:visibility="gone"
+        android:background="@color/colorPrimary2"
+        android:id="@+id/rc">
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:id="@+id/cls"
+            android:background="@drawable/cls"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10sp"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            android:text="BANK"
+            android:id="@+id/title"
+            android:layout_margin="5sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+            android:textColor="#ffffff"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_below="@id/rc"
+        android:visibility="gone"
+
+        android:id="@+id/lland"
+
+        android:orientation="vertical"
+        android:background="@drawable/relativebg">
+        <ImageView
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="end"
+            android:layout_margin="10sp"
+            android:background="@drawable/ed"
+            android:id="@+id/ed4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Land Type"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lat1"
+
+                    android:text="1234567890"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ownership"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PUNJAB NATIONAL BANK"
+                    android:layout_margin="5sp"
+                    android:id="@+id/lat2"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Acres"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/lat3"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soil Type"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/lat4"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Irrigation Source"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/lat5"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latitude"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/lat6"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Longitute"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/lat7"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Village"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/lat8"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Used As Polyhouse"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/lat9"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_below="@id/rc"
+        android:visibility="gone"
+
+        android:id="@+id/lsow"
+
+        android:orientation="vertical"
+        android:background="@drawable/relativebg">
+        <ImageView
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="end"
+            android:layout_margin="10sp"
+            android:background="@drawable/ed"
+            android:id="@+id/ed3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sdt1"
+
+                    android:text="1234567890"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PUNJAB NATIONAL BANK"
+                    android:layout_margin="5sp"
+                    android:id="@+id/sdt10"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crop Season"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt2"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crop Claasification"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt8"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crop Name"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt3"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seed Name"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt11"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Variety"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt4"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seed Qty"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt5"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sowing Area (Acres)"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt6"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yield expected by farmer (in Quintals)"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt7"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expected quantity to be sold (in Quintals)"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt9"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expected Price"
+                    android:textAlignment="center"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/sdt12"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_below="@id/rc"
+        android:id="@+id/lkyc"
+        android:visibility="visible"
+
+        android:orientation="vertical"
+        android:background="@drawable/relativebg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/type"
+
+                    android:text="1234567890"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Type"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PUNJAB NATIONAL BANK"
+                    android:layout_margin="5sp"
+                    android:id="@+id/stype"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="end"
+                android:layout_margin="10sp"
+                android:background="@drawable/ed"
+                android:id="@+id/ed"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Document No"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/dn"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid Till"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/vtill"
+
+                    android:text=""
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:visibility="gone"
+        android:layout_below="@id/rc"
+        android:id="@+id/lbank"
+        android:orientation="vertical"
+        android:background="@drawable/relativebg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account No"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tan"
+
+                    android:text="1234567890"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="end"
+                android:layout_margin="10sp"
+                android:background="@drawable/ed"
+                android:id="@+id/ed2"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IFSC"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/ti"
+
+                    android:text="PUNB0199700"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PUNJAB NATIONAL BANK"
+                    android:layout_margin="5sp"
+                    android:id="@+id/tb"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branch"
+
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#AEAEAE"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    android:text="DILWAR NAGAR"
+                    android:id="@+id/tbr"
+                    android:layout_margin="5sp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

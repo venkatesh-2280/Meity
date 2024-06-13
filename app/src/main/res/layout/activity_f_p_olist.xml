@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FPOlist">
+    <RelativeLayout
+        android:id="@+id/ru"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+
+        android:background="@color/colorPrimary2">
+        <ImageView
+
+            android:layout_width="50sp"
+            android:visibility="visible"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/llg"
+            android:layout_margin="10sp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FPO List"
+            android:textColor="#ffffff"
+            android:id="@+id/title"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FDR Maker"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_below="@id/title"
+            android:id="@+id/title2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll"
+        android:gravity="center|start"
+        android:layout_below="@id/ru"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FPO List"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="#000000"
+            android:padding="5dp"/>
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchFarmerName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            app:iconifiedByDefault="false"
+            app:queryHint="Search &amp; Select FPO"
+            app:searchIcon="@drawable/search_orange"
+            android:layout_weight="1.8"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fpolist"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp" />
+
+</RelativeLayout>

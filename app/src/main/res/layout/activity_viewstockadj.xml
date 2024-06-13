@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="cdfi.fintantra.meity.Viewstockadj">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:alpha="0.6"
+        android:background="#000000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:id="@+id/r">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/ur"
+                android:id="@+id/ur"
+                android:layout_centerVertical="true"
+                android:layout_margin="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Username"
+                android:layout_toRightOf="@id/ur"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Stock Adjustment"
+                android:textSize="30sp"
+                android:id="@+id/title"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.6"
+                android:background="#ffffff"/>
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itm"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/r"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_below="@+id/rc"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.widget.SearchView
+                android:id="@+id/searchQuality"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search &amp; Select"
+                app:searchIcon="@drawable/search_orange" />
+
+            <!--<AutoCompleteTextView
+                android:id="@+id/elc"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+
+                android:layout_margin="15sp"
+                android:layout_marginLeft="10sp"
+
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:hint="Search FarmerName"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="15sp" />-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/cls"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/close_24" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_quality"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l"
+        android:layout_margin="10sp" />
+
+
+</RelativeLayout>

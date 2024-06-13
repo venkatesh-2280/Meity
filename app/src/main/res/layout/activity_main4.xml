@@ -1,0 +1,1915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".MainActivity4">
+    <android.widget.ImageView
+        android:layout_width="30sp"
+        android:layout_height="120sp"
+        android:id="@+id/lefta"
+        android:elevation="10sp"
+
+        android:background="@drawable/lefta"
+        android:layout_centerVertical="true"
+        />
+
+    <android.widget.ImageView
+        android:layout_width="30sp"
+        android:layout_height="120sp"
+        android:id="@+id/righta"
+        android:elevation="10sp"
+
+        android:background="@drawable/righta"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+    <RelativeLayout
+        android:id="@+id/ru"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+
+        android:background="@color/colorPrimary2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff"
+            android:textSize="5sp"
+            android:elevation="5sp"
+            android:textStyle="bold"
+            android:text="@string/version"
+            android:layout_marginRight="10sp"
+            android:layout_alignParentRight="true" />
+
+        <android.widget.ImageView
+
+            android:layout_width="50sp"
+            android:visibility="visible"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/llg"
+            android:layout_margin="10sp"
+            android:elevation="10sp"
+
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunil Kumar Thanga"
+            android:textColor="#ffffff"
+            android:id="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modify Farmer"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_below="@id/title"
+            android:id="@+id/title2"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_weight="1"
+        android:layout_below="@id/ru"
+        android:id="@+id/rr"
+        android:background="@drawable/relativebg"
+        android:layout_margin="5sp">
+        <android.widget.ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/qrcode"
+            android:id="@+id/qrcode"
+            android:layout_centerVertical="true"
+            android:layout_margin="10sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="250sp"
+            android:id="@+id/tinp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:focusable="false"
+                android:id="@+id/searchfarmer"
+                android:paddingLeft="10sp"
+                android:hint="Search farmer Here"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_below="@+id/rr"
+        android:background="@drawable/relativebg"
+        android:layout_margin="5sp"
+        android:id="@+id/r">
+
+        <TextView
+            android:id="@+id/txtheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
+            android:text="Basic Profile"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:id="@+id/linear"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1">
+                <android.widget.ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/im1"
+
+                    android:background="@drawable/sheader"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5sp"
+                    android:id="@+id/v1"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5sp"
+
+
+                    android:background="#1EE500"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.widget.ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/im2"
+
+                    android:background="@drawable/sbank"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5sp"
+                    android:id="@+id/v2"
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5sp"
+                    android:background="#1EE500"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.widget.ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/im3"
+
+                    android:background="@drawable/skyc"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5sp"
+                    android:visibility="gone"
+
+                    android:id="@+id/v3"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5sp"
+                    android:background="#1EE500"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.widget.ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/im5"
+
+                    android:background="@drawable/sland"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5sp"
+                    android:id="@+id/v5"
+                    android:visibility="gone"
+
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5sp"
+                    android:background="#1EE500"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.widget.ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:id="@+id/im4"
+
+
+                    android:background="@drawable/sscd2"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5sp"
+                    android:visibility="gone"
+
+                    android:id="@+id/v4"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5sp"
+                    android:background="#1EE500"/>
+
+            </RelativeLayout>
+
+            <android.widget.ImageView
+                android:id="@+id/consent"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+
+
+
+                android:layout_alignParentRight="true"
+
+                android:background="@drawable/cs" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_margin="5sp"
+        android:layout_below="@+id/r">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l1"
+                android:visibility="visible"
+                android:layout_marginHorizontal="15sp"
+                android:orientation="vertical">
+                <android.widget.ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/captureh"
+                    android:background="@drawable/capture"
+                    android:layout_margin="10sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/farmername"
+                            android:paddingLeft="10sp"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:hint="Farmer First Name"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/surname"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:paddingLeft="10sp"
+                            android:hint="Sur Name"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/fathername"
+                            android:paddingLeft="10sp"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:hint="Father/Husband Name"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:id="@+id/mobileno"
+                            android:paddingLeft="10sp"
+                            android:hint="Mobile No"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:id="@+id/gender"
+                            android:paddingTop="10sp"
+                            android:paddingLeft="10sp"
+                            android:hint="Gender"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:focusable="false"
+                            android:id="@+id/dob"
+                            android:hint="Date Of Birth"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:id="@+id/pincode"
+                            android:paddingLeft="10sp"
+                            android:hint="Pincode"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/address"
+                            android:paddingLeft="10sp"
+                            android:hint="Address"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/hamlet"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Hamlet"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="5sp">
+                    <android.widget.ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/src"
+                        android:elevation="10sp"
+
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:id="@+id/village"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Village"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/grama"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Gram Panchayat"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/taluk"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Taluk"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/district"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="District"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text=""
+                            android:id="@+id/estate"
+                            android:focusable="false"
+
+                            android:paddingLeft="10sp"
+                            android:hint="State"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="India"
+                            android:focusable="false"
+                            android:id="@+id/ecountry"
+                            android:paddingLeft="10sp"
+                            android:hint="Country"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:orientation="horizontal">
+
+                    <android.widget.Button
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton3"
+
+                        android:paddingLeft="10sp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <android.widget.Button
+                        android:id="@+id/exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton2"
+
+                        android:paddingLeft="10sp"
+                        android:text="Exit"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l2"
+                android:layout_marginHorizontal="15sp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <android.widget.Button
+                    android:id="@+id/addnewbank"
+                    android:layout_width="100sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rbutton4"
+
+                    android:paddingLeft="10sp"
+                    android:text="Add New Bank"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <android.widget.ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/src"
+                        android:elevation="10sp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true" />
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:id="@+id/eifsc"
+                            android:hint="IFSC"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:id="@+id/ebank"
+                            android:focusable="false"
+                            android:hint="Bank"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:id="@+id/ebranch"
+                            android:focusable="false"
+                            android:hint="Branch"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:inputType="number"
+                            android:maxLength="16"
+                            android:id="@+id/accountno"
+                            android:hint="Account No"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:orientation="horizontal">
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton4"
+
+                        android:visibility="gone"
+                        android:paddingLeft="10sp"
+                        android:text="Add"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+
+
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton"
+
+                        android:paddingLeft="10sp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/bsave"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton3"
+
+                        android:paddingLeft="10sp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:id="@+id/bview"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton"
+
+                        android:paddingLeft="10sp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l3"
+                android:visibility="gone"
+                android:layout_marginHorizontal="15sp"
+                android:orientation="vertical">
+                <android.widget.Button
+                    android:id="@+id/addnewkyc"
+                    android:layout_width="100sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rbutton4"
+
+                    android:paddingLeft="10sp"
+                    android:text="Add New KYC"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:id="@+id/kttype"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Type"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:id="@+id/kstype"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Sub-Type"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                            android:id="@+id/documentno"
+                            android:paddingLeft="10sp"
+                            android:hint="Document No"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/vtilldate"
+                            android:paddingLeft="10sp"
+                            android:focusable="false"
+                            android:hint="Valid Till"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:visibility="gone"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/cdocumentno"
+                            android:paddingLeft="10sp"
+                            android:hint="Confirm Document No"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <android.widget.ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/capturek"
+                    android:background="@drawable/capture"
+                    android:layout_margin="10sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:orientation="horizontal">
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton4"
+
+                        android:visibility="gone"
+                        android:paddingLeft="10sp"
+                        android:text="Add"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+
+
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton"
+
+                        android:paddingLeft="10sp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/ksave"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton3"
+
+                        android:paddingLeft="10sp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:id="@+id/kview"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton"
+
+                        android:paddingLeft="10sp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l5"
+                android:visibility="gone"
+                android:layout_marginHorizontal="15sp"
+
+                android:orientation="vertical">
+                <android.widget.Button
+                    android:id="@+id/addnewland"
+                    android:layout_width="100sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rbutton4"
+
+                    android:paddingLeft="10sp"
+                    android:text="Add New Land"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:id="@+id/tlt"
+                            android:paddingLeft="10sp"
+                            android:hint="Land Type"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:id="@+id/tow"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Ownership"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/elnoa"
+                            android:paddingLeft="10sp"
+                            android:hint="Plot Size(in acres)"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:drawableRight="@drawable/src"
+                            android:id="@+id/landvillage"
+                            android:paddingLeft="10sp"
+                            android:hint="Village"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+
+                            android:id="@+id/soiltype"
+                            android:paddingLeft="10sp"
+                            android:hint="Soil Type"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:focusable="false"
+                            android:id="@+id/tis"
+                            android:hint="Irrigation Source"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_centerVertical="true"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="10sp"
+                        android:inputType="number"
+
+                        android:id="@+id/uaspoly"
+                        android:paddingLeft="5sp"
+                        android:hint="Used As Polyhouse"/>
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/uaspoly"
+                        android:orientation="horizontal"
+
+                        android:id="@+id/radioGroup"
+                        >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Yes"
+                            android:layout_margin="5sp"
+                            android:id="@+id/radioButton1"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:textSize="19sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No"
+                            android:layout_margin="5sp"
+
+                            android:id="@+id/radioButton2"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:textSize="19sp"
+                            />
+                    </RadioGroup>
+                </RelativeLayout>
+                <android.widget.ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/captureld"
+                    android:background="@drawable/capture"
+                    android:layout_margin="10sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:id="@+id/elat"
+                            android:paddingLeft="10sp"
+                            android:hint="Latitude"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/elon"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Longitute"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:orientation="horizontal">
+
+                    <android.widget.Button
+                        android:id="@+id/lsave"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton3"
+
+                        android:paddingLeft="10sp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <android.widget.Button
+                        android:id="@+id/lview"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton"
+
+                        android:paddingLeft="10sp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l4"
+                android:visibility="gone"
+                android:layout_marginHorizontal="15sp"
+                android:orientation="vertical">
+                <android.widget.Button
+                    android:id="@+id/addnewsow"
+                    android:layout_width="100sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/rbutton4"
+
+                    android:paddingLeft="10sp"
+                    android:text="Add New Sowing"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:id="@+id/cyears"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Year"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:id="@+id/ccty2s"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:focusable="false"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:hint="Crop Season"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:id="@+id/stmnt"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Sowing Date"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:id="@+id/stclf"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:focusable="false"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:hint="Crop Classification"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:id="@+id/ccts"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:paddingLeft="10sp"
+                            android:hint="Crop Name"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:visibility="gone"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:background="#ffffff"
+                            android:focusable="false"
+                            android:id="@+id/cvars"
+                            android:paddingLeft="10sp"
+                            android:hint="Crop Variety"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <AutoCompleteTextView
+                            android:paddingTop="10sp"
+                            android:id="@+id/stsnm"
+                            android:layout_width="match_parent"
+                            android:layout_height="60sp"
+                            android:focusable="false"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:hint="Seed Name"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/sdt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10sp"
+                            android:hint="Seed Qty(Kg)"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:id="@+id/sdt2"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10sp"
+                            android:hint="Sowing Area(Acres)"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/sdt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:paddingLeft="10sp"
+                            android:inputType="numberDecimal"
+                            android:hint="Yield expected by farmer (in Quintals)"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/sdt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10sp"
+                            android:hint="Expected quantity to be sold (in Quintals)"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+
+                    android:background="@drawable/relativebg"
+                    android:layout_margin="5sp">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/sdt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10sp"
+                            android:hint="Expected Rate(Rupees/Quintal)"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:orientation="horizontal">
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton4"
+
+                        android:visibility="gone"
+                        android:paddingLeft="10sp"
+                        android:text="Add"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+
+
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton"
+
+                        android:paddingLeft="10sp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/ssave"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton3"
+
+                        android:paddingLeft="10sp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <android.widget.Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:id="@+id/sview"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rbutton"
+
+                        android:paddingLeft="10sp"
+                        android:text="View"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

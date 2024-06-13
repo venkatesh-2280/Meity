@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:layout_gravity="center"
+    android:id="@+id/lin_lay"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/splash"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:layout_margin="50sp"
+        android:alpha="0.9"
+        android:transitionName="imageshare"
+        android:background="@drawable/logo" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:alpha="0.8"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+
+        android:background="@drawable/rbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20sp"
+        android:id="@+id/gstart"/>
+
+</RelativeLayout>

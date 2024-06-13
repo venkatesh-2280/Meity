@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary2"
+            android:layout_weight="3">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/cls"
+                    android:id="@+id/cls"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10sp"
+                    android:layout_alignParentRight="true" />
+
+                <ImageView
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:background="@drawable/user"
+                    android:id="@+id/iuser"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:id="@+id/tuser"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/iuser"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20sp"
+                    android:text="Welcome User!"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textColor="#ffffff"
+                    android:id="@+id/fname"
+                    android:layout_toRightOf="@id/iuser"
+                    android:textSize="15sp"
+                    android:layout_below="@id/tuser"
+                    android:text="FDR Maker"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@id/iuser"
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Sync"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rm"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/mstr"
+                        android:id="@+id/img4"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/img4"
+                        android:text="Master"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/trs"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/trns"
+                        android:id="@+id/img5"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/img5"
+                        android:text="Transactions"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:alpha="0.6"
+                        android:layout_margin="10sp"
+                        android:background="#ffffff"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@id/iuser"
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Transactions"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/r1"
+                    android:elevation="5sp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/rf2"
+                        android:id="@+id/img"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/img"
+                        android:text="Register Farmer"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/r2"
+                    android:elevation="5sp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/ed2"
+                        android:id="@+id/img2"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/img2"
+                        android:text="Modify Farmer Detail"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rd"
+                    android:elevation="5sp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/ed2"
+                        android:id="@+id/imgrd"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/imgrd"
+                        android:text="Duplicate Farmer List"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_alignParentBottom="true"
+                        android:alpha="0.6"
+                        android:layout_margin="10sp"
+                        android:background="#ffffff"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/setting"
+                        android:id="@+id/img6"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/img6"
+                        android:text="Settings"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rlog"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/logout"
+                        android:id="@+id/img7"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@id/img7"
+                        android:text="Log Out"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

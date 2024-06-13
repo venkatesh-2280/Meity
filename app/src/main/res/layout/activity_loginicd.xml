@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Loginicd">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:id="@+id/rr">
+            <!--            <ImageView-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:background="@drawable/ur"-->
+            <!--                android:id="@+id/ur"-->
+            <!--                  android:layout_centerVertical="true"-->
+            <!--                android:layout_margin="10sp"/>-->
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:text="Username"-->
+            <!--                android:layout_toRightOf="@id/ur"-->
+            <!--                android:textSize="10sp"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:textStyle="bold"/>-->
+
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:background="@drawable/view"-->
+            <!--                android:id="@+id/vw"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:layout_margin="10sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:text="Book Invoice"-->
+            <!--                android:textSize="30sp"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:textStyle="bold"/>-->
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1sp"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:alpha="0.6"-->
+            <!--                android:background="#ffffff"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:background="@color/colorPrimaryDark2"
+
+                android:layout_margin="0sp">
+                <ImageView
+
+                    android:layout_width="50sp"
+                    android:visibility="visible"
+                    android:layout_height="50sp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/kanchinewlogo"
+                    android:layout_margin="5sp"
+                    android:elevation="10sp"
+
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#ffffff"
+                    android:textSize="5sp"
+                    android:elevation="5sp"
+                    android:textStyle="bold"
+                    android:text="@string/version"
+                    android:layout_marginRight="10sp"
+                    android:layout_alignParentRight="true" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:id="@+id/name"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:text="Input Center"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rr"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tb"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/splash"
+                                android:layout_width="150sp"
+                                android:layout_height="150sp"
+                                android:layout_centerHorizontal="true"
+
+                                android:layout_marginStart="40sp"
+                                android:layout_marginLeft="40sp"
+                                android:layout_marginTop="40sp"
+                                android:layout_marginEnd="40sp"
+                                android:layout_marginRight="40sp"
+                                android:layout_marginBottom="40sp"
+                                android:background="@drawable/newkanchilogos"
+                                android:transitionName="imageshare"
+                                android:visibility="visible" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80sp"
+                                android:id="@+id/rip"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50sp"
+                                    android:textSize="20sp"
+                                    android:hint="IP Address"
+                                    android:layout_marginHorizontal="20sp"
+                                    android:textColorHint="#000000"
+                                    android:id="@+id/edip"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:id="@+id/r"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/splash">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <EditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:id="@+id/username"
+                                        android:paddingLeft="10sp"
+                                        android:hint="UserName"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:id="@+id/r2"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/relativebg"
+                                android:gravity="center"
+                                android:layout_below="@id/r">
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <EditText
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:inputType="textPassword"
+                                        android:id="@+id/password"
+                                        android:paddingLeft="10sp"
+                                        android:hint="Password"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+
+                            <Button
+                                android:id="@+id/login"
+                                android:layout_width="250sp"
+                                android:layout_height="60sp"
+                                android:layout_below="@id/r2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="20sp"
+                                android:background="@drawable/rbutton"
+                                android:text="Login"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="25sp" />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/my_text"
+                                android:layout_below="@id/login"
+                                android:id="@+id/ul"
+                                android:textColor="#43D0FF"
+                                android:visibility="gone"
+                                android:selectAllOnFocus="false"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:linksClickable="false"
+                                android:autoLink="all"
+                                />
+
+                            <ImageView
+                                android:id="@+id/ministry"
+                                android:layout_width="250sp"
+                                android:layout_height="80sp"
+                                android:layout_below="@+id/ul"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5sp"
+                                android:src="@drawable/ministrylogo" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ministry"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="20sp"
+                                android:layout_marginBottom="20sp"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/copyright"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</ScrollView>

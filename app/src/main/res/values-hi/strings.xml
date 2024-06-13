@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="buyername">Buyer Name</string>
+    <string name="itm">Item</string>
+    <string name="itmvar">Item Variety</string>
+    <string name="qty">Quantity</string>
+    <string name="qc">QC Person</string>
+    <string name="pd">Pick Up Date</string>
+    <string name="rmk">Remarks</string>
+    <string name="vt">Vehicle Type</string>
+    <string name="vno">Vehicle No</string>
+    <string name="lrp">Lrp Name</string>
+    <string name="lrpm">Lrp Mobile No</string>
+    <string name="img">Image</string>
+    <string name="snb">Serial No Of Bags</string>
+    <string name="nb">No Of Bags</string>
+    <string name="sap">Search and Populate</string>
+    <string name="save">Save</string>
+    <string name="view">View</string>
+    <string name="cancel">Cancel</string>
+    <string name="uom">UOM</string>
+</resources>

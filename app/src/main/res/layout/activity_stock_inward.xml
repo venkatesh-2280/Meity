@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="cdfi.fintantra.meity.StockInward">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:alpha="0.6"
+        android:background="#000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+           >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:id="@+id/r">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Stock Inward"
+                    android:textSize="30sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/view"
+                    android:id="@+id/vw"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.6"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/r">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/item"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Item">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Quantity">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Rate">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rbutton3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10sp"
+                    android:id="@+id/add"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:text="Clear"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rbutton2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10sp"
+                    android:id="@+id/clear"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rbutton"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10sp"
+                    android:id="@+id/view"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/itemcount"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Item Count">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/totalamt"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Total Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/supplier"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Supplier">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Location">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/taxamt"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Tax Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Discount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/transport"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Transport">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/others"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Others">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/netamt"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Net Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inwardno"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Inward No">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inwarddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_margin="10sp"
+                        android:background="@drawable/red"
+                        android:hint="Inward Date">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_margin="10sp"
+                            android:background="@null"
+                            android:textSize="20sp"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rbutton3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10sp"
+                    android:id="@+id/save"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:text="Exit"
+                    android:textAllCaps="false"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rbutton2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10sp"
+                    android:id="@+id/exit"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

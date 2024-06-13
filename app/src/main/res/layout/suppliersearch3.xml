@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000"
+        android:alpha="0.6"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.6"/>
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.6"
+        android:layout_alignParentRight="true" />
+    <View
+        android:layout_width="1sp"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.6"/>
+
+    <LinearLayout
+        android:id="@+id/l"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rc"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgtype"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="Regular Buyer"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/onetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.13"
+                android:checked="true"
+                android:text="One Time Buyer"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rlregular"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:visibility="visible">
+
+            <AutoCompleteTextView
+                android:id="@+id/elc"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+
+                android:layout_marginStart="15sp"
+                android:layout_marginLeft="10sp"
+
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/red"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/src"
+
+                android:hint="Search Here"
+                android:inputType="text"
+                android:padding="5sp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlonetime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/buyname"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+
+                android:layout_marginStart="15sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+
+                android:background="@drawable/red"
+                android:completionThreshold="1"
+
+                android:hint="Buyer Name"
+                android:inputType="text"
+                android:padding="5sp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/buymob"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+                android:layout_below="@+id/buyname"
+
+                android:layout_marginStart="15sp"
+                android:layout_marginLeft="10sp"
+
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+
+                android:background="@drawable/red"
+                android:completionThreshold="1"
+
+                android:hint="Buyer Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="5sp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <android.widget.Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_below="@id/buymob"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/but_save"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:id="@+id/esupplier2"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+                android:layout_margin="15sp"
+                android:layout_marginLeft="10sp"
+
+                android:background="@drawable/red"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/src"
+                android:hint="searchhere"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColor="#000000"
+
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/colorPrimary2">
+
+        <TextView
+            android:id="@+id/dialogtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cls"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/cls" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itm"
+        android:layout_width="match_parent"
+        android:layout_margin="10sp"
+        android:layout_below="@+id/l"
+        android:layout_above="@+id/select"
+        android:layout_height="match_parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginBottom="20sp"
+        android:textSize="15sp"
+        android:padding="5sp"
+        android:visibility="gone"
+
+        android:text="Add New Member"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/select"/>
+
+
+</RelativeLayout>

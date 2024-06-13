@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent"
+    tools:context=".Issuetransfer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/r">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/colorPrimary"
+
+            android:layout_margin="0sp">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_margin="5sp"
+                android:id="@+id/list"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:elevation="1sp"
+                android:background="@drawable/list"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/font_sizev"
+                android:id="@+id/name"
+                android:textColor="#ffffff"
+                android:text="Welcome Sunil Kumar Thanga"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/font_sizev"
+                android:id="@+id/fponame"
+                android:textColor="#ffffff"
+                android:layout_below="@id/name"
+                android:text="Thanga Thamarai IC"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+
+                android:layout_width="50sp"
+                android:visibility="visible"
+                android:layout_height="50sp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/kanchinewlogo"
+                android:layout_margin="5sp"
+                android:elevation="10sp"
+
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/ticd"
+                android:textSize="25sp"
+                android:layout_marginTop="15sp"
+                android:textColor="#ffffff"
+                android:text="ICD"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/font_sizev"
+                android:id="@+id/fponame2"
+                android:textColor="#ffffff"
+                android:layout_below="@id/ticd"
+                android:text="Issue/Transfer to Secondary Input Center"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="30sp"-->
+        <!--            android:layout_height="30sp"-->
+        <!--            android:background="@drawable/ur"-->
+        <!--            android:id="@+id/ur"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_margin="5sp"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:text="Username"-->
+        <!--            android:layout_toRightOf="@id/ur"-->
+        <!--            android:textSize="10sp"-->
+        <!--            android:textColor="#ffffff"-->
+        <!--            android:textStyle="bold"/>-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="30sp"-->
+        <!--            android:layout_height="30sp"-->
+        <!--            android:background="@drawable/view"-->
+        <!--            android:id="@+id/vw"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:visibility="gone"-->
+        <!--            android:layout_margin="5sp"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:text="Stock Inward"-->
+        <!--            android:textSize="30sp"-->
+        <!--            android:textColor="#ffffff"-->
+        <!--            android:textStyle="bold"/>-->
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1sp"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:alpha="0.6"-->
+        <!--            android:background="#ffffff"/>-->
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/r">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg"
+                android:gravity="center"
+                android:layout_below="@id/splash">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/src"
+
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <AutoCompleteTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:id="@+id/eicd"
+                        android:paddingLeft="10sp"
+                        android:hint="ICD"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg"
+                android:gravity="center"
+                android:layout_below="@id/splash">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/src"
+
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <AutoCompleteTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:id="@+id/eitem"
+                        android:paddingLeft="10sp"
+                        android:hint="Item"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg"
+                android:gravity="center"
+                android:layout_below="@id/splash">
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:id="@+id/euom"
+                        android:paddingLeft="10sp"
+                        android:hint="UOM"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg"
+                android:gravity="center"
+                android:layout_below="@id/splash">
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <AutoCompleteTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:id="@+id/estock"
+                        android:paddingLeft="10sp"
+                        android:hint="Available Stock"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg"
+                android:gravity="center"
+                android:layout_below="@id/splash">
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <AutoCompleteTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/estockto"
+                        android:paddingLeft="10sp"
+                        android:hint="Stock To ICD"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/relativebg"
+                android:gravity="center"
+                android:layout_below="@id/splash">
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <AutoCompleteTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:id="@+id/erstock"
+                        android:paddingLeft="10sp"
+                        android:hint="Balance Stock"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="180sp"
+            android:layout_height="40sp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_sizeb"
+
+
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+
+            android:textColor="#ffffff"
+
+            android:layout_marginHorizontal="100sp"
+
+            android:background="@drawable/rbutton3"
+            android:layout_alignParentBottom="true"
+
+            android:id="@+id/bsave"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

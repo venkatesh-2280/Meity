@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cdfi.fintantra.meity.VSA">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:id="@+id/r">
+            <!--            <ImageView-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:background="@drawable/ur"-->
+            <!--                android:id="@+id/ur"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_margin="10sp"/>-->
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:text="Username"-->
+            <!--                android:layout_toRightOf="@id/ur"-->
+            <!--                android:textSize="10sp"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:textStyle="bold"/>-->
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:text="Stock Adjustment"-->
+            <!--                android:textSize="30sp"-->
+            <!--                android:id="@+id/title"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:textStyle="bold"/>-->
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1sp"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:alpha="0.6"-->
+            <!--                android:background="#ffffff"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/colorPrimary"
+
+                android:layout_margin="0sp">
+                <ImageView
+
+                    android:layout_width="50sp"
+                    android:visibility="visible"
+                    android:layout_height="50sp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/kanchinewlogo"
+                    android:layout_margin="10sp"
+                    android:elevation="10sp"
+
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/ticd"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15sp"
+                    android:textColor="#ffffff"
+                    android:text="ICD"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_sizev"                    android:id="@+id/name"
+                    android:textColor="#ffffff"
+                    android:text="Welcome Sunil Kumar Thanga"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_sizev"
+                    android:visibility="gone" android:id="@+id/title"
+                    android:textColor="#ffffff"
+                    android:layout_below="@id/name"
+                    android:text="Thanga Thamarai IC"
+                    android:layout_centerHorizontal="true"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:id="@+id/title2"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:layout_below="@id/title"-->
+<!--                    android:text="Adjust Stock"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itm"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/r"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

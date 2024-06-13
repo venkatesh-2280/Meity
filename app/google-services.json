@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "143129764754",
+    "project_id": "kanchiwrapperup",
+    "storage_bucket": "kanchiwrapperup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143129764754:android:d469f09e5c84032ded974b",
+        "android_client_info": {
+          "package_name": "cdfi.fintantra.meity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143129764754-6nqqral7a1ilvjcmkf7cethqhq0e39pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzD_gds9QAVS7Jvj6jJjvlHTGXEy-PwZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143129764754-6nqqral7a1ilvjcmkf7cethqhq0e39pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143129764754:android:9beb56f660268d39ed974b",
+        "android_client_info": {
+          "package_name": "cdfi.fintantra.meity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143129764754-6nqqral7a1ilvjcmkf7cethqhq0e39pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzD_gds9QAVS7Jvj6jJjvlHTGXEy-PwZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143129764754-6nqqral7a1ilvjcmkf7cethqhq0e39pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

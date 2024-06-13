@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#f2f2f2"
+    tools:context=".Fheader">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:id="@+id/r">
+            <!--            <ImageView-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:background="@drawable/ur"-->
+            <!--                android:id="@+id/ur"-->
+            <!--                  android:layout_centerVertical="true"-->
+            <!--                android:layout_margin="5sp"/>-->
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:text="Username"-->
+            <!--                android:layout_toRightOf="@id/ur"-->
+            <!--                android:textSize="10sp"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:textStyle="bold"/>-->
+
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="30sp"-->
+            <!--                android:layout_height="30sp"-->
+            <!--                android:background="@drawable/view"-->
+            <!--                android:id="@+id/vw"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:layout_margin="5sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:text="Book Invoice"-->
+            <!--                android:textSize="30sp"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:textStyle="bold"/>-->
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1sp"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:alpha="0.6"-->
+            <!--                android:background="#ffffff"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:background="@color/colorPrimary"
+
+                android:layout_margin="0sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_sizev"
+                    android:id="@+id/name"
+                    android:textColor="#ffffff"
+                    android:text="Welcome Sunil Kumar Thanga"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_sizev"
+                    android:visibility="gone"
+                    android:id="@+id/fponame"
+                    android:textColor="#ffffff"
+                    android:layout_below="@id/name"
+                    android:text="Thanga Thamarai IC"
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+
+                    android:layout_width="50sp"
+                    android:visibility="visible"
+                    android:layout_height="50sp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/kanchinewlogo"
+                    android:layout_margin="5sp"
+                    android:elevation="10sp"
+
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/ticd"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15sp"
+                    android:textColor="#ffffff"
+                    android:text="ICD"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_sizev"
+                    android:id="@+id/fponame2"
+                    android:textColor="#ffffff"
+                    android:layout_below="@id/ticd"
+                    android:text="Add Farmer"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l1"
+            android:layout_below="@+id/r"
+
+
+
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            android:id="@+id/captureh"
+            android:background="@drawable/capture"
+            android:layout_margin="10sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/qrcode"
+                android:id="@+id/qrcode"
+                android:layout_centerVertical="true"
+                android:layout_margin="10sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/farmername"
+                    android:paddingLeft="10sp"
+                    android:hint="Farmer Name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/surname"
+                    android:paddingLeft="10sp"
+                    android:hint="Sur Name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/fathername"
+                    android:paddingLeft="10sp"
+                    android:hint="Father/Husband Name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:id="@+id/mobileno"
+                    android:paddingLeft="10sp"
+                    android:hint="Mobile No"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <AutoCompleteTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:background="#ffffff"
+                    android:focusable="false"
+
+                    android:id="@+id/gender"
+                    android:paddingLeft="10sp"
+                    android:hint="Gender"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:paddingLeft="10sp"
+                    android:focusable="false"
+                    android:id="@+id/dob"
+                    android:hint="Date Of Birth"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:id="@+id/pincode"
+                    android:paddingLeft="10sp"
+                    android:hint="Pincode"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/address"
+                    android:paddingLeft="10sp"
+                    android:hint="House No"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/hamlet"
+                    android:focusable="false"
+                    android:paddingLeft="10sp"
+                    android:hint="Hamlet"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+
+            android:layout_margin="5sp">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/src"
+
+                android:layout_centerVertical="true"
+                android:elevation="10sp"
+                android:layout_margin="10sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+
+                <AutoCompleteTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:background="#ffffff"
+                    android:id="@+id/village"
+                    android:focusable="false"
+                    android:paddingLeft="10sp"
+                    android:hint="Village"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/grama"
+                    android:focusable="false"
+                    android:paddingLeft="10sp"
+                    android:hint="Gram Panchayat"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/taluk"
+                    android:focusable="false"
+                    android:paddingLeft="10sp"
+                    android:hint="Taluk"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/district"
+                    android:focusable="false"
+                    android:paddingLeft="10sp"
+                    android:hint="District"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="UP"
+                    android:id="@+id/estate"
+                    android:focusable="false"
+
+                    android:paddingLeft="10sp"
+                    android:hint="State"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/relativebg"
+            android:layout_margin="5sp">
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="India"
+                    android:focusable="false"
+                    android:id="@+id/ecountry"
+                    android:paddingLeft="10sp"
+                    android:hint="Country"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rbutton3"
+
+                android:paddingLeft="10sp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rbutton2"
+
+                android:paddingLeft="10sp"
+                android:text="Exit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

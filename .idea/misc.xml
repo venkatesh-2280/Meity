@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Kanchi UPPRO/October/kan-mobile-uppro-wrapper/ICD/app/src/main/res/layout/activity_bookinvoicenew.xml" value="0.13125" />
+        <entry key="..\:/Kanchi UPPRO/October/kan-mobile-uppro-wrapper/ICD/app/src/main/res/layout/activity_dashboard.xml" value="0.13125" />
+        <entry key="..\:/Kanchi UPPRO/October/kan-mobile-uppro-wrapper/ICD/app/src/main/res/layout/activity_landpage.xml" value="0.13125" />
+        <entry key="..\:/Kanchi UPPRO/October/kan-mobile-uppro-wrapper/ICD/app/src/main/res/layout/activity_stockinwardnew.xml" value="0.2" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/drawable-anydpi/sscd.xml" value="0.1675" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_bookinvoicenew.xml" value="0.18541666666666667" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_consent.xml" value="0.22" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_gpsactivity.xml" value="0.22" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_home_page.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_landpage.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main3.xml" value="0.1734375" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main4.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_production_tab.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sale_entry.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_single_login.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sno.xml" value="0.19739583333333333" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sno2.xml" value="0.19739583333333333" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sno_activitype.xml" value="0.19739583333333333" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_stockinwardnew.xml" value="0.18541666666666667" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_viewstockinward.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/attachment.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recyclerview_lotno.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recyclerview_lotno2.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recyclerview_product.xml" value="0.25" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_search_farmer_dialog.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_search_item_dialog.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/demo.xml" value="0.25" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/demo2.xml" value="0.1734375" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/navimenu.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/navimenu3.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/orglist.xml" value="0.2203125" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/otppage.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/rec_actual_purchase_screen.xml" value="0.2" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/rec_actual_purchase_view_list.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/singlenavmenu.xml" value="0.18" />
+        <entry key="..\:/Meity/April20/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewstockadjustment.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_landpage.xml" value="0.1" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_login.xml" value="0.2203125" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_loginicd.xml" value="0.2203125" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main.xml" value="0.2203125" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main3.xml" value="0.22" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main4.xml" value="0.18" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/navimenu2.xml" value="0.1" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/orglist.xml" value="0.1" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/tablistdetails2.xml" value="0.2046875" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewitem.xml" value="0.20925925925925926" />
+        <entry key="..\:/Meity/April4/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewitemlist.xml" value="0.2203125" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/drawable/rbutton.xml" value="0.192" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/drawable/rbutton2.xml" value="0.192" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/drawable/rbutton3.xml" value="0.192" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_attachment_list.xml" value="0.5" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_bookinvoicenew.xml" value="0.22" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_consent.xml" value="0.25" />
+<<<<<<< HEAD
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_errorpage.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_f_p_olist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_farmer_reg.xml" value="0.1" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_farmer_reg2.xml" value="0.1" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_m_f_c.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main3.xml" value="0.33" />
+=======
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_f_p_olist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main3.xml" value="0.15085470085470085" />
+>>>>>>> a8eeadfd5b596601af357f897c57b3343638550f
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_main4.xml" value="0.18385416666666668" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_mpin.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_n_f_c.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_othercosticd.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_otherinputsicd.xml" value="0.22" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_paymentlist.xml" value="0.1" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_paymentlist2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_paymentpending.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_paymentpendinglist.xml" value="0.14957264957264957" />
+<<<<<<< HEAD
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_production_tab.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_q_r_view.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_qpar.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_qpar_salenew.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_qparpe.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sale_entry.xml" value="0.2" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_saleentrylist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_single_login.xml" value="0.18" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sno.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sno2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sno_activitype.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_stock_adjustment.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_stock_adjustment2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_stockinwardnew.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/actv.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/attachment.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/buyerlist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/content_home_page.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_lotno_dialog.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_quality_para_dialog.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recyclerview_lotno.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recyclerview_product.xml" value="0.16367521367521368" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recyclerview_quality.xml" value="0.16367521367521368" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recycleview_farmer.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_search_farmer_dialog.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_search_item_dialog.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_search_item_dialogtff.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_spinner_items.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/demo.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/fpospinnertext.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/grn_list.xml" value="0.15085470085470085" />
+=======
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sale_entry.xml" value="0.2" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_single_login.xml" value="0.16" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_sno_activitype.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/activity_stockinwardnew.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/attachment.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/custom_recyclerview_quality.xml" value="0.16367521367521368" />
+>>>>>>> a8eeadfd5b596601af357f897c57b3343638550f
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/memmaplist.xml" value="0.18385416666666668" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/nav_header_home_page.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/navimenu.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/navimenu2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/navimenu3.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/orglist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/orglist2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/othercosticd.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/othercosticdview.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/otherinputicd.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/otppage.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/pamaker_screen.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/paymentdialog.xml" value="0.16" />
+<<<<<<< HEAD
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/producelist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/qrviewpage.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/quality_parameter_list.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/quality_parameter_list3.xml" value="0.16367521367521368" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/rec_actual_purchase_screen.xml" value="0.15" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/rec_actual_purchase_view.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/rec_actual_purchase_view_list.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_list_screen.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_list_screen2.xml" value="0.15384615384615385" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_list_screen3.xml" value="0.15384615384615385" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_list_screen_new_purchase.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_screen.xml" value="0.18385416666666668" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/singlenavmenu.xml" value="0.2" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/spinnertext2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suplist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suplist2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suplist3.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suplist4.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suplist5.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suplistfpo.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suppliersearch.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suppliersearch2.xml" value="0.25" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suppliersearch2s.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suppliersearch3.xml" value="0.16367521367521368" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/tablist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/tablistdetails.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/tablistdetails2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/taluksearch.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewitem.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewitemlist.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewpaylist.xml" value="0.15085470085470085" />
+=======
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/quality_parameter_list3.xml" value="0.16367521367521368" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/rec_actual_purchase_screen.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_list_screen2.xml" value="0.15384615384615385" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_list_screen3.xml" value="0.15384615384615385" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/serial_screen.xml" value="0.18385416666666668" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/singlenavmenu.xml" value="0.2" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/suppliersearch2.xml" value="0.2975970425138632" />
+>>>>>>> a8eeadfd5b596601af357f897c57b3343638550f
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewpaylist2.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewpaylist2p.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewpayment.xml" value="0.22" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewstkadj.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewstockadjustment.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewtax.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/viewtaxd.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/vsa.xml" value="0.15085470085470085" />
+        <entry key="..\:/Meity/July2/meity-mobile-wrapper/ICD/app/src/main/res/layout/vslist.xml" value="0.15085470085470085" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/activity_errorpage.xml" value="0.1" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/activity_login.xml" value="0.2203125" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/activity_main3.xml" value="0.2046875" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/activity_sale_entry.xml" value="0.2203125" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/activity_saleentrylist.xml" value="0.18" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/activity_sno_activitype.xml" value="0.19270833333333334" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/custom_recyclerview_lotno.xml" value="0.2203125" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/custom_recyclerview_lotno2.xml" value="0.10185185185185185" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/custom_search_item_dialog.xml" value="0.2046875" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/orglist.xml" value="0.2203125" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/rec_actual_purchase_screen.xml" value="0.33" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/serial_list_screen.xml" value="0.10185185185185185" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/serial_list_screen2.xml" value="0.10185185185185185" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/serial_list_screen3.xml" value="0.10185185185185185" />
+        <entry key="..\:/NPAWHS/ICD/app/src/main/res/layout/serial_screen.xml" value="0.14907407407407408" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

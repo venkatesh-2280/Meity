@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/sync"
+        >
+        <menu>
+            <item
+                android:id="@+id/master"
+                android:icon="@drawable/master_24dp"
+                android:title="@string/master" />
+            <item
+                android:id="@+id/transaction"
+                android:icon="@drawable/transaction_24dp"
+                android:title="@string/transaction" />
+        </menu>
+    </item>
+    <item android:title="@string/transaction">
+        <menu>
+
+            <item
+                android:id="@+id/act_purchase"
+                android:icon="@drawable/act_purchase_24"
+                android:title="Purchase Entry" />
+
+            <item
+                android:id="@+id/act_purchase2"
+                android:icon="@drawable/act_purchase_24"
+                android:title="Sale Entry" />
+
+
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/setting_24dp"
+            android:title="@string/nav_seting" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout_24dp"
+            android:title="@string/logout" />
+    </group>
+
+</menu>
